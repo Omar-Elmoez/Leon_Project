@@ -1,0 +1,403 @@
+/* Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif; 
+    background-image: url(../images/landing.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overlay {
+    background-color: rgba(0, 97, 95, 0.664);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.global-section {
+    margin: 100px 25px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px aliceblue;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.4em;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title + p {
+    margin: 0;
+    width: auto;
+}
+
+
+.global-icon {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.circle-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 20px aliceblue;
+}
+
+p {
+    line-height: 1.5;
+    color: aliceblue;
+    width: 70%;
+    margin: auto;
+}
+
+.img-thumbnail {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* End Global Rules */
+
+/* Starting Header */
+header {
+    padding: 20px;
+    background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+} 
+
+header .container img {
+    width: 60px;
+}
+
+header .container .links {
+    position: relative;
+}
+
+header .container .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35px;
+    position: relative;
+}
+
+header .container .icon:after {
+    content: '\21D3';
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0EA0DF;
+    display: none;
+}
+header .container .icon span {
+    background-color: #24484f;
+    height: 2px;
+    width: 100%;
+}
+
+header .container .icon span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+header .container .icon span:nth-child(2) {
+    width: 60%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+header .container .links .icon:hover span:nth-child(2) {
+    width: 100%;
+}
+
+header .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 170px;
+    top: calc(100% + 20px);
+    text-align: left;
+    display: none;
+}
+header .container .links:hover ul,
+header .container .links:hover .icon:after {
+    display: block;
+}
+header .container ul i {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    color: #36199f;
+    font-size: 17px;
+}
+
+header .container ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(226, 236, 236);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+}
+
+header .container ul li a:hover {
+    padding-left: 30px;
+}
+
+header .container ul li:not(:last-child) a  {
+    border-bottom: 1px solid #aaa;
+}
+
+/* Ending Header */
+
+/* Starting Landing */
+.overlay .landing {
+    padding-top: 150px;
+}
+
+.overlay .landing .intro-text {
+    text-align: center;
+    max-width: 100%;
+}
+
+.overlay .landing .intro-text h1 {
+    margin: 0;
+    font-size: 4em;
+    color: white;
+}
+
+.overlay .landing .intro-text p {
+    margin: 5px auto 0;
+    font-size: 18px;
+    color: #333;
+    width: 270px;
+    max-width: 100%;
+}
+/* Ending Landing */
+
+/* Starting Features */
+.features .container .meza h2 {
+    color: #ffffffad;
+    font-weight: 800;
+    min-height: 55px;
+}
+/* Ending Features */
+
+/* Starting Services */
+.services .circle-heading {
+    margin: auto;
+}
+
+.services .container {
+    margin-top: 0; 
+}
+
+.services .container .service {
+    margin-top: 60px;
+}
+
+.services .container .col h2 {
+    color: #c5dad9;
+    font-size: 30px;
+    font-weight: 800;
+}
+/* Ending Services */
+
+/* starting Portfolio */
+.portfolio .circle-heading {
+    margin: auto;
+}
+
+.portfolio .grid {
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.portfolio .card {
+    text-align: center;
+}
+
+.portfolio .card img {
+    max-width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.portfolio .card h3 {
+    color: #c5dad9;
+}
+/* Ending Portfolio */
+
+/* starting About */
+.about .container {
+    display: flex;
+}
+
+.about .container .text {
+    margin: auto;
+    flex-basis: calc(100% - 300px);
+}
+
+.about .container .text p {
+    margin-top: 0;
+    line-height: 2;
+}
+
+.about .container .text hr {
+    width: 220px;
+    border-color: aliceblue;
+    margin: 20px auto;
+}
+/* Ending About */
+
+/* Starting Contact */
+.contact .container .label {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.contact .container .link {
+    text-decoration: none;
+    font-size: 25px;
+    color: #10CAB7;
+}
+
+.contact .container .social .global-icon {
+    color: #10CAB7;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
+
+.contact .container .social i {
+    font-size: 25px;
+}
+
+.contact .container > p {
+    margin-top: 30px;
+}
+/* Ending Contact */
+
+/* Starting Footer */
+footer {
+    text-align: center;
+}
+
+footer p span {
+    color: #10CAB7;
+}
+/* Ending Footer */
+
+/* Start Dark & Light Mode */
+.dark-mode,
+.light-mode {
+    position: fixed;
+    left: -15px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    -webkit-border-radius: 35%;
+    -moz-border-radius: 35%;
+    -ms-border-radius: 35%;
+    -o-border-radius: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+.dark-mode {
+    background-color: #333;
+}
+.light-mode {
+    background-color: #eee;
+}
+.light-mode .light-icon {
+    color: goldenrod;
+}
+/* End Dark & Light Mode */
+
+/* Start Go Up */
+.go-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #c3cac7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.go-up a {
+    color: aliceblue;
+}
+/* End Go Up */

@@ -1,0 +1,87 @@
+/* Start Phone Screen */
+@media (max-width: 767px) {
+    p {
+        width: 75%;
+    }
+    .circle-heading {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle-heading h2 {
+        font-size: 2.6em;
+    }
+    
+    .circle-heading p {
+        font-size: 10px;
+    }
+        
+    .services .grid {
+        gap: 0;
+    }
+    
+    .portfolio .card img {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    
+    .about .container {
+        flex-direction: column;
+    }
+    
+    .about .container .circle-heading {
+        margin: auto;
+    }
+    
+    .about .container .text {
+        margin-top: 70px;
+    }
+    
+    .about .container .text hr {
+        width: 40%;
+    }
+    
+    .contact .container .label {
+        font-size: 17px;
+    }
+    
+    .contact .container .link {
+        font-size: 15px;
+    }
+    
+    .contact .container .social .global-icon i {
+        font-size: 15px;
+    }
+}
+/* End Phone Screen */
+
+/* Start Small&Medium Screen */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 85%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    p {
+        width: auto;
+    }
+
+    .about .container {
+        display: revert;
+    }
+
+    .about .container .circle-heading {
+        margin: 0 auto 40px;
+    }   
+    
+    .about .container hr {
+        width: 50%;
+    }
+}
+/* End Small&Medium Screen */
